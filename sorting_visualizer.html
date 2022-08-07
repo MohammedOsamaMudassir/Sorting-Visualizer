@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Ubuntu:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="sorting_visualizer.css" />
+    <script defer src="sorting_visualizer.js"></script>
+
+    <title>Sorting Visualizer</title>
+</head>
+
+<body>
+    <div class="heading ">
+        <div class="heading_name">
+            Sorting Visualizer
+        </div>
+    </div>
+    
+    <div class="buttons_list">
+        <div class="array_functions">
+            <span class="array_generator">
+                <a href="#" class="buttons generate_array">Generate Array</a>
+            </span>
+            <span class = "array_size">
+                Array size
+                <input class="array_size_slider" type="range" step="20" min=40 max=240 value=80>
+            </span>
+            <span class = "animation_speed">
+                Animation speed
+                <input class="animation_speed_slider" type="range" step="25" min=1 max=501 value=101>
+            </span>
+        </div>
+        <ul class="sorting_functions">
+            <li class="sorting_function">
+                <a href="#" class="buttons bubble_sort">Bubble Sort</a>
+            </li>
+            <li class="sorting_function">
+                <a href="#" class="buttons selection_sort">Selection Sort</a>
+            </li>
+            <li class="sorting_function">
+                <a href="#" class="buttons insertion_sort">Insertion Sort</a>
+            </li>
+            <li class="sorting_function">
+                <a href="#" class="buttons quick_sort">Quick Sort</a>
+            </li>
+            <li class="sorting_function">
+                <a href="#" class="buttons merge_sort">Merge Sort</a>
+            </li>
+        </ul>
+    </div>
+    <p class="timer hidden">Time elapsed   <span class="minutes time">50</span> : <span class="seconds time">50</span> : <span class="miliseconds time">50</span></p>
+    <div class="bars-container">
+        <!-- <div class="bar bar1"></div> -->
+    </div>
+
+
+
+</body>
+
+</html>
